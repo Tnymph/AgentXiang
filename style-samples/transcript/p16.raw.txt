@@ -1,0 +1,115 @@
+D:\a\sherpa-onnx\sherpa-onnx\sherpa-onnx\csrc\parse-options.cc:Read:374 'E:\VibeCoding\AgentXiang\.tools\sherpa\sherpa-onnx-v1.13.8-win-x64-shared-MD-Release\bin\sherpa-onnx-vad-with-offline-asr.exe' '--silero-vad-model=E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx' '--sense-voice-model=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx' '--tokens=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt' --sense-voice-language=zh --num-threads=12 'E:\VibeCoding\AgentXiang\style-samples\wav\p16.wav' 
+
+VadModelConfig(silero_vad=SileroVadModelConfig(model="E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=512, neg_threshold=-1), ten_vad=TenVadModelConfig(model="", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=256), sample_rate=16000, num_threads=1, provider="cpu", debug=False)
+OfflineRecognizerConfig(feat_config=FeatureExtractorConfig(sampling_rate=16000, feature_dim=80, low_freq=20, high_freq=-400, dither=0, normalize_samples=True, snip_edges=False), model_config=OfflineModelConfig(transducer=OfflineTransducerModelConfig(encoder_filename="", decoder_filename="", joiner_filename=""), paraformer=OfflineParaformerModelConfig(model=""), nemo_ctc=OfflineNemoEncDecCtcModelConfig(model=""), whisper=OfflineWhisperModelConfig(encoder="", decoder="", language="", task="transcribe", tail_paddings=-1, enable_token_timestamps=False, enable_segment_timestamps=False, ), fire_red_asr=OfflineFireRedAsrModelConfig(encoder="", decoder=""), tdnn=OfflineTdnnModelConfig(model=""), zipformer_ctc=OfflineZipformerCtcModelConfig(model=""), wenet_ctc=OfflineWenetCtcModelConfig(model=""), sense_voice=OfflineSenseVoiceModelConfig(model="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx", language="zh", use_itn=False), moonshine=OfflineMoonshineModelConfig(preprocessor="", encoder="", uncached_decoder="", cached_decoder="", merged_decoder="", decoder="", ), dolphin=OfflineDolphinModelConfig(model=""), canary=OfflineCanaryModelConfig(encoder="", decoder="", src_lang="", tgt_lang="", use_pnc=True), cohere_transcribe=OfflineCohereTranscribeModelConfig(encoder="", decoder="", language="", use_punct=True, use_itn=True), omnilingual=OfflineOmnilingualAsrCtcModelConfig(model=""), funasr_nano=OfflineFunASRNanoModelConfig(encoder_adaptor="", llm="", embedding="", tokenizer="", system_prompt="You are a helpful assistant.", user_prompt="语音转写：", max_new_tokens=512, temperature=1e-06, top_p=0.8, seed=42, language="", itn=True, hotwords=""), medasr=OfflineMedAsrCtcModelConfig(model=""), fire_red_asr_ctc=OfflineFireRedAsrCtcModelConfig(model=""), qwen3_asr=OfflineQwen3ASRModelConfig(conv_frontend="", encoder="", decoder="", tokenizer="", hotwords="", max_total_len=512, max_new_tokens=128, temperature=1e-06, top_p=0.8, seed=42), telespeech_ctc="", tokens="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt", num_threads=12, debug=False, provider="cpu", model_type="", modeling_unit="cjkchar", bpe_vocab=""), lm_config=OfflineLMConfig(model="", scale=0.5, lodr_scale=0.01, lodr_fst="", lodr_backoff_id=-1), ctc_fst_decoder_config=OfflineCtcFstDecoderConfig(graph="", max_active=3000), decoding_method="greedy_search", max_active_paths=4, hotwords_file="", hotwords_score=1.5, blank_penalty=0, rule_fsts="", rule_fars="", hr=HomophoneReplacerConfig(lexicon="", rule_fsts=""))
+Creating recognizer ...
+Recognizer created!
+Started
+Reading: E:\VibeCoding\AgentXiang\style-samples\wav\p16.wav
+Started!
+15.646 -- 18.604: 这一讲把倒数的概念推广到你举证
+19.710 -- 26.508: 孔子说温故而知新可以为师矣温故之心在这一讲将会体现得淋漓尽致
+27.454 -- 32.172: 我们知道在数中一和任何一个数 A 的乘积仍然等于 A
+33.086 -- 38.668: 在举证中是否有那么一个举证它和任何一个举证 A 的乘积仍然等于 A 呢
+39.518 -- 41.836: 这个问题似乎不那么容易回答
+42.654 -- 63.228: 假设 A 是一个 M 行 N 列的矩阵那么左边这个矩阵的捏数必须是 M 这两个矩阵才可以这样相乘要使得这个乘积等于 A 那么左边这个矩阵的行数就应该等于 A 的行数所以我们要找的这个矩阵必须是一个 M 阶方阵要在 A 的右边乘以这个 M 阶方阵
+63.358 -- 68.908: 那 A 的捏数必须等于右边这个矩阵的行数也就是说 M 和 N 必须相等
+69.406 -- 72.268: 所以我们接下来只考虑 N阶方阵的情形
+72.766 -- 77.164: 当然如果 N 等于一那么这个问题就退化为数的情形
+77.694 -- 79.660: 所以我们先来考虑 N 等于二的前形
+80.222 -- 89.516: 注意这里的第一个等号意味着这两个矩阵可交换而我们此前曾经证明过与任何一个二阶方阵都可交换的矩证只有二阶数量矩阵
+90.014 -- 95.372: 我们有这样一个等式于是只要取这个小 A 等于一就得到我们想要的举证了
+95.966 -- 101.644: 注意这个二阶矩阵的特点是组织角线上的元素全是一其余的元素全是零
+102.174 -- 111.532: 一般的如果一个 N 阶方阵主对角线上的元素全都是一其余的元素全都是零我们就把这个矩阵称了一个 N 阶单位矩阵
+111.998 -- 120.844: 即为 E N 或者 I N 在上下文非常明确或者不需要指出它的接触的时候我们也可以把这个下标 N 省略
+121.598 -- 133.004: 与这个二阶的情形类似可以直接验证 N 阶单位矩阵系与任何一个 N 阶矩阵 A 的产积都满足这个等式所以单位矩阵可以看成数一的推广
+133.534 -- 138.444: 对于数而言如果 A B 的乘积等于一我们就称 B 为 A 的倒数
+139.070 -- 159.324: 对于矩证如果两个 N加 矩证 A B 的乘积满足 A B 等于 B A 等于单位矩证 E我们就称 B 为 A 的逆矩阵对于数而言我们知道如果一个数 A 有倒数那么它的倒数是唯一的也就是说如果 B 和 C 都是 A 的倒数那么 B 一定等于 C
+159.934 -- 167.372: 我想问一下你知道这是为什么吗如果我要你证明这个结论你会不会反过来问我这还需要证明吗
+167.838 -- 187.052: 请注意我们过去的学习过程中可能由于各种各样的原因被动的接受了一些知识而忽略了其中的道理下面我们就来证明这个结论首先 B 等于 B 乘以一由于 A C 等于一我们可以做这样一个等量调换利用结合率可以把这个 B A 结合起来
+187.518 -- 195.532: 而这里的 B A 是等于一的做一个等量调换就得到 E C 也就是 C 这样我们就证明了 B 等于 C
+196.094 -- 206.412: 仿照数的情形我们可以证明如果 N阶 矩证 A B C 满足 A B 等于 B A 等于 E 同时 A C 等于 C A 等于 E 那么 B 一定等于 C
+206.910 -- 211.500: 事实上我们可以把左边这个证明逐字逐句的改成举证的版本
+211.966 -- 214.252: 你看 B 等于 B 乘以一对吧
+214.718 -- 217.964: 根据这里的 A C 等于一 我们可以做一个等量调换
+218.462 -- 221.356: 我们前面已经证明了取证成法满足结合率
+221.822 -- 223.500: 把这里的 B A 结合起来
+223.998 -- 232.780: 根据这个条件 B A 等于 E 做一个等量代换得到 E C 而 E C 就等于 C 这样我们就证明了 B 等于 C
+233.438 -- 237.772: 比较一下这两个证明你会发现其中的道理是一模一样的
+238.462 -- 243.692: 我们把这边竖的情形推广到这边举证的情形这就是典型的温故之心
+244.318 -- 245.708: 我们还可以继续下去
+246.174 -- 259.916: 我们知道如果数 A 有倒数那么它的倒数是唯一的即为 A 的负一次方类似的如果 N 阶矩阵 A 有逆矩阵简称为 A 可逆那么我们可以把 A 的逆矩阵即为 A 的负一次方
+260.382 -- 265.516: 注意这个记号是没有奇义的因为如果 A 可逆那么它的逆矩证是唯一的
+266.206 -- 271.884: 现在新的问题又来了什么样的举证 A 可逆呢我们先来看一下数的情形
+272.350 -- 276.332: 我们知道一个数 A 有倒数的充分必要条件是 A 不等于零
+277.054 -- 281.484: 也许你会猜想 A 可逆的充分必要条件是不是 A 不等于零呢
+282.046 -- 285.036: 你可以先拿一个简单一点的分林取证来试一下
+285.598 -- 291.980: 比如说这个矩证 A 不等于零那么是否存在一个矩证 B 使得 A B 等于 B A 等于 E 呢
+292.446 -- 293.452: 你可以成成看
+294.014 -- 304.076: 很容易算出来 A B 的第一行是 U 和 V 第二行全都是零那这个矩证不可能等于单位矩证一 了因为组织角线上的这个数是零不是一
+304.638 -- 307.980: 这个例子告诉我们刚才的这个问题没那么简单
+309.022 -- 320.524: 回忆一下我们曾经讲过这样一个例题根据这个例题可以看出对于一个二阶矩证 A 如果存在 B 使得 A B 等于单位矩阵 E 那么 A 的行列式一定不等于零
+321.150 -- 323.660: 注意刚才这个矩证 A 的行列式是代给你
+324.286 -- 328.044: 这就从另外一个角度解释了为什么这个矩阵 A 不可逆
+328.862 -- 334.732: 那你也许会猜想二阶方正 A 可逆的充分必要条件是不是 A 的行列是不等于零呢
+335.422 -- 336.428: 恭喜你猜对了
+336.990 -- 339.980: 事实上这个猜想的一半上面已经证明过了
+341.182 -- 345.996: 下面关键要证明如果 A 的行列是不等于零那么它一定可逆
+346.590 -- 355.404: 为此我们假设 A 中的四个元素依次为 A B C D 我们先来看是否存在一个矩证 B 使得 A B 等于单位矩证 E
+355.998 -- 364.620: 要使得这个等式成立这里的 A U 加上 B X 必须等于这个一 C U 加上 D X 必须等于这个零
+365.246 -- 367.564: A V 加上 B Y 等于这个零
+368.126 -- 370.476: C V 加上 D Y 等于这个一
+371.102 -- 373.420: 于是我们就得到两个线形分程组
+374.238 -- 377.164: 第一个线性方程组端的未知数是 U 和 X
+377.854 -- 380.588: 第二个线形盘整组中的未知数是 V 和 Y
+381.438 -- 383.948: 他们的系数矩证都是这个矩证 A
+384.574 -- 388.460: 如果 A 的行列是不等于零那么根据克拉莫法则可以知道
+388.958 -- 391.052: 这两个线性范程组都有解
+391.614 -- 396.172: 具体的求解过程我这里就不写了因为大家可以自己去代公式
+396.670 -- 398.028: 得到的结果是这样的
+401.566 -- 405.868: 这样我们就求出了举证 B 使得 A B 等于单位矩证 E
+406.910 -- 410.668: 可是新的问题又来了 B A 也等于单位矩证一吗
+411.134 -- 417.740: 因为一般情况下两个举阵的乘积不一定满足交换率所以我们这地方还需要验证一下
+418.398 -- 422.892: 我来验证这里面的第一行第一列 U A 加上 V C 等于一
+423.678 -- 425.868: 把这里的 U 和 V 带入到这里
+426.398 -- 428.844: 得到的结果是这样的整理一下
+429.406 -- 433.036: 分母是 A 的行列式分子干华也是 A 的行列式
+433.566 -- 436.236: 可见 U A 加上 V C 等于一
+437.118 -- 441.708: 大家可以自己动手验证一下这里的 U B 加上 V D 等于零
+442.238 -- 444.908: X A 加 Y C 也等于你
+445.726 -- 448.044: X B 加上 Y D 等于一
+448.542 -- 454.764: 可见这里的 B A 也等于单位矩阵 E 这就说明这个矩证 B 确实是 A 的逆矩阵
+455.262 -- 456.748: 因此 A 是可逆的
+457.502 -- 460.396: 现在这个猜想就变成一个命题了
+460.894 -- 463.660: 刚才的分析就给出了这个命题的证明
+464.446 -- 466.060: 这是二阶矩阵的情形
+466.654 -- 468.364: 那么对于一般的 N阶 矩阵呢
+469.502 -- 475.308: 大家以后在线性代数课程中将会学到这个结论对于一般的 N阶 I 矩证也成立
+477.438 -- 490.188: 对于数的乘法我们知道有所谓的消去率也就是说如果 A B 等于 A C 其中的 A 不等于零那么我们可�num threads: 12
+decoding method: greedy_search
+Elapsed seconds: 24.451 s
+Real time factor (RTF): 24.451 / 638.804 = 0.038
+�从这个等式的两边把 A 消去得到 B 等于 C
+490.814 -- 495.084: 回忆一下我们在讲举证乘法的时候说过这样一个例子
+495.678 -- 503.500: 如果矩证 A B C 满足 A B 等于 A C 其中的矩证 A 不等于零那么一般情况下推不出 B 等于 C
+503.998 -- 505.484: 这让人觉得有些遗憾
+506.014 -- 515.660: 为了把数的乘法的消去率推广到举证的前形我们需要回过头来重新审视一下数的乘法的消去率看看这个结论为什么成立
+516.702 -- 525.420: 注意这里的 A 不等于零所以 A 有倒数于是我们可以在这个等式的两边同时乘以 A 的倒数得到这个等式
+525.918 -- 530.540: 对等号的左边使用结合率和等量代换就可以得到 B
+531.006 -- 538.572: 同样对这个等号的右边使用结合率和等量调换就可以得到 C 这样就证明了 B 等于 C
+539.614 -- 541.804: 你从这里能得到怎样的启示呢
+542.270 -- 549.996: 原来对于数而言 A 不等于零意味着 A 有倒数而对于矩证而言 A 不等于零推不出 A 可逆
+550.558 -- 558.860: 我相信你已经猜到了如果矩证 A B C 满足 A B 等于 A C 其中 A 的行列式不等于零那么 B 一定等于 C
+559.390 -- 561.932: 这个结论的证明留做课后练习吧
+563.262 -- 571.084: 我们知道对于数而言方程 A X 等于 B 当 A 不等于零的时候有唯一解 X 等于 A 的倒数乘以 B
+571.550 -- 579.948: 这是因为 X 等于一 X 而一等于 A 的倒数乘以 A 利用结合率把这里的 A 和 X 结合起来
+580.510 -- 584.620: 做一个等量代换就可以得到 X 等于 A 的倒数乘以 B
+585.342 -- 591.820: 把它带回这个等式验算一下可以发现 X 等于 A 的倒数乘以 B 确实是这个方程的解
+592.702 -- 603.180: 反照数的情形我们很容易猜想对于 N 阶矩阵如果 A X 等于 B 其中 A 的行列是不等于零那么我们可以解出 X 等于 A 的 N乘以 B
+603.806 -- 606.028: 这个结论的证明同样留作练习
+607.102 -- 608.524: 好了我们来小结一下
+609.022 -- 612.972: 通过温故之新我们把倒数的概念推广到你矩证
+613.502 -- 617.676: 并且把关于倒数的一些结论成功的推广到逆举证的情形
+618.398 -- 622.380: 其中一部分比较容易另一部分需要费一些周折
+623.134 -- 628.044: 希望大家仔细回味一下这个过程从而提升自己温故知心的能力
+629.214 -- 630.828: 这一讲就介绍到这里

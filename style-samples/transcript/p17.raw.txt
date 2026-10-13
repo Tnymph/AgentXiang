@@ -1,0 +1,147 @@
+D:\a\sherpa-onnx\sherpa-onnx\sherpa-onnx\csrc\parse-options.cc:Read:374 'E:\VibeCoding\AgentXiang\.tools\sherpa\sherpa-onnx-v1.13.8-win-x64-shared-MD-Release\bin\sherpa-onnx-vad-with-offline-asr.exe' '--silero-vad-model=E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx' '--sense-voice-model=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx' '--tokens=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt' --sense-voice-language=zh --num-threads=12 'E:\VibeCoding\AgentXiang\style-samples\wav\p17.wav' 
+
+VadModelConfig(silero_vad=SileroVadModelConfig(model="E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=512, neg_threshold=-1), ten_vad=TenVadModelConfig(model="", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=256), sample_rate=16000, num_threads=1, provider="cpu", debug=False)
+OfflineRecognizerConfig(feat_config=FeatureExtractorConfig(sampling_rate=16000, feature_dim=80, low_freq=20, high_freq=-400, dither=0, normalize_samples=True, snip_edges=False), model_config=OfflineModelConfig(transducer=OfflineTransducerModelConfig(encoder_filename="", decoder_filename="", joiner_filename=""), paraformer=OfflineParaformerModelConfig(model=""), nemo_ctc=OfflineNemoEncDecCtcModelConfig(model=""), whisper=OfflineWhisperModelConfig(encoder="", decoder="", language="", task="transcribe", tail_paddings=-1, enable_token_timestamps=False, enable_segment_timestamps=False, ), fire_red_asr=OfflineFireRedAsrModelConfig(encoder="", decoder=""), tdnn=OfflineTdnnModelConfig(model=""), zipformer_ctc=OfflineZipformerCtcModelConfig(model=""), wenet_ctc=OfflineWenetCtcModelConfig(model=""), sense_voice=OfflineSenseVoiceModelConfig(model="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx", language="zh", use_itn=False), moonshine=OfflineMoonshineModelConfig(preprocessor="", encoder="", uncached_decoder="", cached_decoder="", merged_decoder="", decoder="", ), dolphin=OfflineDolphinModelConfig(model=""), canary=OfflineCanaryModelConfig(encoder="", decoder="", src_lang="", tgt_lang="", use_pnc=True), cohere_transcribe=OfflineCohereTranscribeModelConfig(encoder="", decoder="", language="", use_punct=True, use_itn=True), omnilingual=OfflineOmnilingualAsrCtcModelConfig(model=""), funasr_nano=OfflineFunASRNanoModelConfig(encoder_adaptor="", llm="", embedding="", tokenizer="", system_prompt="You are a helpful assistant.", user_prompt="语音转写：", max_new_tokens=512, temperature=1e-06, top_p=0.8, seed=42, language="", itn=True, hotwords=""), medasr=OfflineMedAsrCtcModelConfig(model=""), fire_red_asr_ctc=OfflineFireRedAsrCtcModelConfig(model=""), qwen3_asr=OfflineQwen3ASRModelConfig(conv_frontend="", encoder="", decoder="", tokenizer="", hotwords="", max_total_len=512, max_new_tokens=128, temperature=1e-06, top_p=0.8, seed=42), telespeech_ctc="", tokens="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt", num_threads=12, debug=False, provider="cpu", model_type="", modeling_unit="cjkchar", bpe_vocab=""), lm_config=OfflineLMConfig(model="", scale=0.5, lodr_scale=0.01, lodr_fst="", lodr_backoff_id=-1), ctc_fst_decoder_config=OfflineCtcFstDecoderConfig(graph="", max_active=3000), decoding_method="greedy_search", max_active_paths=4, hotwords_file="", hotwords_score=1.5, blank_penalty=0, rule_fsts="", rule_fars="", hr=HomophoneReplacerConfig(lexicon="", rule_fsts=""))
+Creating recognizer ...
+Recognizer created!
+Started
+Reading: E:\VibeCoding\AgentXiang\style-samples\wav\p17.wav
+Started!
+15.134 -- 17.004: 这一讲介绍出等取证
+17.502 -- 22.700: 重点是初等举证与初等变换之间的联系以及初等取证的可逆性
+24.254 -- 32.876: 如果你看过动画片葫芦兄弟你一定会对其中的七个葫芦娃印象深刻他们有的会吐火有的会吐水
+34.046 -- 38.316: 下面要说的出等取证也像葫芦娃那样各有各的特殊本领
+39.326 -- 40.748: 我们先来看这个取证
+41.246 -- 48.044: 把它组成到这个矩阵上口算一下就可以了零乘以 A 加上一乘以 C 等于 C
+48.798 -- 51.788: 零乘以 B 加上一乘以 D 等于 D
+52.414 -- 55.372: 一乘以 A 加上零乘以 C 等于 A
+55.870 -- 58.604: 一乘以 B 加上零乘以 D 等于 B
+59.678 -- 63.468: 你看这是不是相当于互换了这个举证的第一行和第二行啊
+64.094 -- 67.980: 也许你会好奇左边这个矩阵为什么具有这种本领呢
+68.574 -- 77.644: 你仔细观察一下这个举证的特点它和单位矩证非常接近我们只要呼换这个单位矩证的第一行和第二行就可以得到这个举证
+78.238 -- 80.908: 可见这个矩阵携掉了这样一种基因
+82.046 -- 86.348: 我们再来看如果这个矩阵又产到一个矩阵上会产生什么样的效果
+87.454 -- 90.860: X 乘以零加上 Y 乘以一等于 Y
+91.582 -- 94.924: X 乘以一加上 Y 乘以零等于 X
+95.678 -- 98.860: U 乘以零加上 V 乘以一等于 V
+99.678 -- 102.892: U 乘以一加上 V 乘以零等于 U
+103.774 -- 107.116: 这是不是相当于互换了这个举战的第一列和第二列啊
+108.286 -- 119.820: 也许你会问刚才不是说了这个矩阵携带了互换第一行和第二行这种基因吗可是这个矩阵又成到这个矩阵上产生的效果却是互换了这里的第一列和第二列
+120.862 -- 127.084: 我们可以这样来理解这个举证也可以看成是互换单位矩阵里面的第一列和第二列得到的
+128.190 -- 133.420: 一般的我们把互换一个举证当中的某两列这种变换也称为兑换变换
+134.430 -- 139.692: 那么这个举阵和别的举阵相乘的时候产生的效果是相应的兑换变换
+140.222 -- 143.180: 所成产生的效果是相应的好变患
+143.742 -- 146.508: 幼成产生的效果是相应的裂变化
+148.926 -- 150.412: 我们再来看这个取证
+151.038 -- 153.612: 注意我们要求这里的 K 不等于零
+154.270 -- 166.348: 那么这个举证可以看成是二阶单位矩证经过一次被产变换得到的事实上我们只要把这个二阶单位矩证的第一行乘以这个非零的数 K 就可以得到这个举证了
+167.390 -- 173.516: 注意这个矩阵也可以看成是把二阶单位矩证的第一列的每个元素都乘以非零的数 K 得到的
+174.558 -- 180.300: 一般的把一个矩阵的某一列的每个元素都乘以一个非零的数 K 也称为被乘变换
+181.374 -- 199.308: 我们把这个矩阵组成到一个矩阵上看看会产生怎样的效果 K 乘以 A 加上零乘以 C 等于 K A K 乘以 B 加上零乘以 D 等于 K D 零乘以 A 加上一乘以 C 等于 C 零乘以 B 加上一乘以 D 等于 D
+200.414 -- 204.780: 这相当于把这个矩阵的第一行每个元素都乘以这个非零的数 K
+205.886 -- 209.324: 如果把这个矩阵又传到一个矩阵上结果会怎样呢
+210.366 -- 214.124: X 乘以 K 加上 Y 乘以零等于 X K
+214.590 -- 224.332: X 乘以零加上 Y 乘以一等于 Y U 乘以 K 加上 V 乘以零等于 U K U 乘以零加上 V 乘以一等于 V
+225.374 -- 229.964: 这相当于把这个矩证的第一列每个元素都乘以这个非零的数 K
+231.006 -- 233.836: 可见这个矩阵携带了被尘变化的基因
+234.526 -- 239.276: 它和别的矩证相乘的时候产生的效果是相应的背产变换
+239.838 -- 242.700: 组成产生的效果是相应的糖变化
+243.166 -- 246.188: 右成产生的效果是相应的裂变化
+247.966 -- 250.188: 我们再来看背加变换的情形
+250.942 -- 263.116: 把这个二阶单位矩阵的第二行的 K 背加到第一行对应的元素上会得到这个矩阵他也可以看成是把单位矩阵的第一列的 K 背加到第二列对应的元素上得到的
+264.350 -- 270.796: 一般的把一个矩阵的某一列的 K 背加到另外一列的对应的元素上也称为背加变换
+272.414 -- 277.420: 大家可以猜一下把这个矩阵组成到一个矩阵上会产生怎样的效果
+278.494 -- 283.340: 我们来口算一下一乘以 A 加上 K 乘以 C 等于 A 加 K C
+284.094 -- 287.628: 一乘以 B 加上 K 乘以 D 等于 B 加 K D
+288.382 -- 294.348: 零乘以 A 加上一乘以 C 等于 C 零乘以 B 加上一乘以 D 等于 D
+295.518 -- 300.204: 这相当于把这个矩阵的第二行的 K 背加到第一行对应的元素上
+301.342 -- 303.500: 和你刚才所猜想的是不是一样的呀
+304.606 -- 308.652: 那这个矩阵又成到一个矩阵上会产生怎样的效果呢
+309.310 -- 310.700: 你可以先猜想一下
+311.774 -- 313.932: 下面来检验一下你猜的对不对
+314.430 -- 317.964: X 乘以一加上 Y 乘以零等于 X
+318.526 -- 322.316: X 乘以 K 加上 Y 乘以一等于 X K 加 Y
+322.942 -- 330.092: U 乘以一加上 V 乘以零等于 U U 乘以 K 加上 V 乘以一等于 U K 加 V
+331.262 -- 335.404: 这相当于把这个矩阵的第一列的 K 背加到第二列对应的元素上
+336.478 -- 339.116: 可见这个矩阵携带了背加变化的基因
+340.254 -- 344.524: 它和别的矩阵相乘的时候产生的效果是相应的背加变换
+345.150 -- 348.012: 所成产生的效果是相应的行变换
+348.510 -- 351.212: 右产产生的效果是相应的裂变快
+353.342 -- 360.396: 我们把对取证的列进行的对换变换被产变换和背加变换统称为取证的初等列变换
+361.022 -- 366.220: 矩证的初等行变换和初等列变换统称为矩证的初等变换
+368.158 -- 371.660: 对于一个 N 阶单位矩阵其中的 N 大于等于二
+372.254 -- 376.396: 如果我们互换他的第二行和 D J行会得到这样一个举阵
+376.958 -- 379.116: 第二行的机换的第几行
+379.582 -- 381.516: 第一行的第一换到第二行
+382.142 -- 388.396: 请注意这个矩证也可以看成是把单位矩证的第二列和第阶列互换得到的
+388.894 -- 391.948: 如果这样看的话这个一是从这里换来的
+392.478 -- 394.444: 这个一是从这里换过来的
+395.070 -- 397.420: 我们把这个取阵记为 E I J
+399.422 -- 405.740: 单位矩阵的第二行乘以一个非零的数 K 会得到这个矩阵注意这里的 K 不等于零
+406.302 -- 411.212: 这个举证也可以看成是把单位矩证的第二列乘以非零的数 K 得到的
+411.934 -- 414.540: 我们把这个矩阵即为 E I K
+416.222 -- 421.612: 把单位矩阵第七行的 K 背加到第二行那么这个位置会变成 K
+422.238 -- 425.132: 我们把这个矩阵即为 E I J K
+425.662 -- 432.076: 注意这里的 I 和 J 的顺序行变换的时候是把 D J 行的 K 背加到第二行
+432.958 -- 438.348: 注意这个矩阵也可以看成是把单位矩阵第二列的 K 背加到 D J 列得到的
+439.006 -- 444.364: 如果这样看的话那这个句号表示把第二列的 K 背加到 D阶 列
+444.894 -- 450.252: 根据这个虚线箭头的指向我们不妨用行左列右来记这个规则
+451.454 -- 457.356: 为了叙速方便我们把由单位举证经过一次初等变换得到的举证叫做初等举证
+457.950 -- 463.596: 请注意根据定义初等矩证有以下三类他们都携带了初等变换的基因
+464.798 -- 468.556: 比如说刚才提到的这个初等矩证可以记为一一二
+469.630 -- 472.268: 这个出等矩阵可以记为 E 一 K
+473.310 -- 476.588: 下面这个出等举阵可以记为一一二 K
+477.150 -- 483.820: 请注意如果按行变换理解它是把单位举战中第二行的 K 背加到第一行得到的
+484.382 -- 489.996: 如果按初的裂变化来理解它是把单位矩阵中第一列的 K 背加到第二列得到的
+491.070 -- 496.588: 用这个矩阵组成到这个矩阵上相当于对这个矩阵进行一次初等行变换
+497.086 -- 503.308: 具体的说就是把这个矩阵的第二行的 K加到第一行和这个行变换是对应的
+504.350 -- 512.012: 右产的时候相当于出了裂变换你看把这个矩阵的第一列的 K 背加到第二列就可以得到这个矩阵
+512.606 -- 515.052: 他和这个出的电变化正好是对应的
+515.966 -- 518.892: 注意这里我们只接举了二阶矩证的例子
+519.422 -- 534.988: 在以后的线性代数课程中你会学到如下定理对矩阵 A 进行一次初等行变换相当于在 A 的左边乘以一个相应的初等取阵对矩阵 A 进行一次初等逆变换相当于在 A 的右边乘以一个相应的初等取阵
+535.710 -- 539.180: 同样我们可以用寒左劣右来记住这个规则
+541.406 -- 544.972: 现在我们来看这个初等矩证与他自身的乘积
+545.438 -- 555.500: 我们可以这样来看把这个初等矩阵组成到这个矩阵上相当于兑换这个矩阵的第一行和第二行所以得到的结果正好是这个单位矩阵
+556.094 -- 562.124: 从这个等式可以看出这个初等矩阵是可逆的并且它的逆矩阵就是它自身
+563.710 -- 571.372: 我们再来看这个初等取阵注意其中的 K 不等于零我们是否可以在它的右边乘以一个矩阵得到单位矩证呢
+571.998 -- 583.404: 很容易看出只要把这个矩证的第一列乘以 K 的倒数就可以把它化为单位矩证了这相当于在这个矩阵的右边乘以这样一个初等矩阵不信你可以自己验算一下这个等式
+585.054 -- 589.708: 另外把这两个初等取阵反过来相乘得到的结果也是单位取证
+590.366 -- 599.020: 由此可以看出这个初等矩阵是可逆的并且它的逆矩阵也是一个初等矩阵所不同的是这个位置是 K 的倒数
+600.542 -- 607.436: 我们再来看这个初灯矩证请思考一下在这个矩阵的右边乘以一个什么样的矩证可以得到单位矩证呢
+607.934 -- 612.108: 我们只要看能不能对这个矩阵进行出的裂变换化为单位矩阵就可以了
+612.798 -- 617.708: 很容易看出只要把这个矩证第一列的负 K 背加到第二列就可以了
+618.238 -- 620.940: 这个初等列变换对应的初等矩阵是这样的
+621.566 -- 627.884: 类似的大家可以自己检查一下如果把这两个矩证换过来相乘得到的结果也是单位矩证
+628.798 -- 636.716: 由此可见这个初能矩阵也是可逆的并且它的逆矩阵是这样的只要把这里的 K 换成负 K 就可以了
+637.278 -- 643.948: 一般的我们可以证明初等取证都是可逆的而且初等取证的逆举证仍然是初等取证
+644.542 -- 647.532: 具体的说 E I 阶的逆矩症是他自身
+648.254 -- 654.156: 要求这个被产变换对应的初等取证的逆矩证只要把这里的 K 换成 K 的倒数就可以了
+655.166 -- 661.068: 要求这个背加变换所对应的出等举证能力矩阵只要把这里的 K 换成负 K 就可以了
+663.038 -- 669.932: 最后我想提醒大家注意这样一个现象把这个矩证的第一行加到第二行会得到这个矩阵
+670.398 -- 674.476: 再把他的第二行的负一倍加到第一行得到的结果是这样的
+675.230 -- 678.732: 把这个矩证的第一行加到第二行得到这个矩阵
+679.326 -- 684.204: 对于这个举阵把它的第一行乘以负一这时神奇的一幕发生了
+684.766 -- 694.476: 请大家注意在刚才这个初等航变换的过程中我们只用了背加变换和背产变换但是最终产生的效果相当于一个兑换变换
+695.038 -- 699.404: 你看只要互换这个矩阵的第一行和第二行就可以得到这个矩阵
+699.998 -- 720.124: 这个例子告诉我们兑换变换可以通过被产变换和背加变换来实现从这个意义上说举证的初等变换中兑换变换是多余的但是用被产变换和背加变换来实现这个兑换变换的过程还是有点麻烦的不如直接把兑换变换也作为一种初等变换来得方便
+721.086 -- 733.196: 从初等变换和初等矩阵之间的联系这个角度来看我们可以从单位矩证出发把这个单位矩证的第一行加到第二行相当于在这个单位矩证的左边乘以这样一个初等矩阵
+733.758 -- 738.732: 得到的结果是这样的再把这个取证�num threads: 12
+decoding method: greedy_search
+Elapsed seconds: 31.315 s
+Real time factor (RTF): 31.315 / 843.442 = 0.037
+�第二行的负一倍加到第一行
+739.198 -- 751.500: 相当于在这个基础上再组成一个相应的初等取证得到的结果是这样的注意这个一乘以负一加到这个零上得到负一这个一乘以负一和这个一相加得到这个零
+752.318 -- 754.764: 再把这个举证的第一行加到第二行
+755.262 -- 758.796: 相当于在这个基础上再组成一个相应的初等矩阵
+759.294 -- 762.380: 这个负一和这个一相加得到这个零
+763.070 -- 770.764: 把这个矩证的第一行乘以负一相当于在这个基础上再组成一个相应的初等矩阵得到的结果是这样的
+771.934 -- 781.132: 对这个单位矩阵经过这样一系列的初等行变换得到这个举阵相当于在这个单位矩阵的左边依次乘以相应的初等矩阵得到这个举阵
+781.758 -- 784.684: 注意这个矩阵是对换变换对应的出能矩阵
+785.502 -- 791.820: 另外根据矩证乘法的结合率我们可以把这个等式左边的前面的这四个矩阵结合起来
+792.446 -- 796.140: 在他的右边乘以这个单位矩阵和不乘是一样的
+796.894 -- 806.732: 于是由这个等式可以看出这个兑换变换对应的初等矩阵可以分解为被产变换和背加变换对应的初等矩阵的乘积
+808.606 -- 813.132: 请大家注意出人取证在举证理论中扮演着重要的角色
+814.238 -- 821.484: 请大家课后花一点时间对照这一组例子仔细的体会一下初等矩证和初等变换之间的联系
+822.238 -- 825.772: 并且对照这一组例子体会一下初等举证的可逆性
+827.582 -- 831.212: 至于最后提到的这两点大家了解一下就可以了
+833.566 -- 835.884: 关于初等取证我们就介绍到这里

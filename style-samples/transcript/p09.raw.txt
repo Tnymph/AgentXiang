@@ -1,0 +1,179 @@
+D:\a\sherpa-onnx\sherpa-onnx\sherpa-onnx\csrc\parse-options.cc:Read:374 'E:\VibeCoding\AgentXiang\.tools\sherpa\sherpa-onnx-v1.13.8-win-x64-shared-MD-Release\bin\sherpa-onnx-vad-with-offline-asr.exe' '--silero-vad-model=E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx' '--sense-voice-model=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx' '--tokens=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt' --sense-voice-language=zh --num-threads=12 'E:\VibeCoding\AgentXiang\style-samples\wav\p09.wav' 
+
+VadModelConfig(silero_vad=SileroVadModelConfig(model="E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=512, neg_threshold=-1), ten_vad=TenVadModelConfig(model="", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=256), sample_rate=16000, num_threads=1, provider="cpu", debug=False)
+OfflineRecognizerConfig(feat_config=FeatureExtractorConfig(sampling_rate=16000, feature_dim=80, low_freq=20, high_freq=-400, dither=0, normalize_samples=True, snip_edges=False), model_config=OfflineModelConfig(transducer=OfflineTransducerModelConfig(encoder_filename="", decoder_filename="", joiner_filename=""), paraformer=OfflineParaformerModelConfig(model=""), nemo_ctc=OfflineNemoEncDecCtcModelConfig(model=""), whisper=OfflineWhisperModelConfig(encoder="", decoder="", language="", task="transcribe", tail_paddings=-1, enable_token_timestamps=False, enable_segment_timestamps=False, ), fire_red_asr=OfflineFireRedAsrModelConfig(encoder="", decoder=""), tdnn=OfflineTdnnModelConfig(model=""), zipformer_ctc=OfflineZipformerCtcModelConfig(model=""), wenet_ctc=OfflineWenetCtcModelConfig(model=""), sense_voice=OfflineSenseVoiceModelConfig(model="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx", language="zh", use_itn=False), moonshine=OfflineMoonshineModelConfig(preprocessor="", encoder="", uncached_decoder="", cached_decoder="", merged_decoder="", decoder="", ), dolphin=OfflineDolphinModelConfig(model=""), canary=OfflineCanaryModelConfig(encoder="", decoder="", src_lang="", tgt_lang="", use_pnc=True), cohere_transcribe=OfflineCohereTranscribeModelConfig(encoder="", decoder="", language="", use_punct=True, use_itn=True), omnilingual=OfflineOmnilingualAsrCtcModelConfig(model=""), funasr_nano=OfflineFunASRNanoModelConfig(encoder_adaptor="", llm="", embedding="", tokenizer="", system_prompt="You are a helpful assistant.", user_prompt="语音转写：", max_new_tokens=512, temperature=1e-06, top_p=0.8, seed=42, language="", itn=True, hotwords=""), medasr=OfflineMedAsrCtcModelConfig(model=""), fire_red_asr_ctc=OfflineFireRedAsrCtcModelConfig(model=""), qwen3_asr=OfflineQwen3ASRModelConfig(conv_frontend="", encoder="", decoder="", tokenizer="", hotwords="", max_total_len=512, max_new_tokens=128, temperature=1e-06, top_p=0.8, seed=42), telespeech_ctc="", tokens="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt", num_threads=12, debug=False, provider="cpu", model_type="", modeling_unit="cjkchar", bpe_vocab=""), lm_config=OfflineLMConfig(model="", scale=0.5, lodr_scale=0.01, lodr_fst="", lodr_backoff_id=-1), ctc_fst_decoder_config=OfflineCtcFstDecoderConfig(graph="", max_active=3000), decoding_method="greedy_search", max_active_paths=4, hotwords_file="", hotwords_score=1.5, blank_penalty=0, rule_fsts="", rule_fars="", hr=HomophoneReplacerConfig(lexicon="", rule_fsts=""))
+Creating recognizer ...
+Recognizer created!
+Started
+Reading: E:\VibeCoding\AgentXiang\style-samples\wav\p09.wav
+Started!
+16.446 -- 17.132: 大家好
+17.726 -- 24.204: 这一讲介绍一个具体的画平面二次曲线的一般方程为标准方程的例子
+25.150 -- 29.676: 在此之前我想提醒大家平常多留心多思考
+30.686 -- 33.164: 我们平时经常说到前后左右
+33.918 -- 35.244: 你仔细体会一下
+35.742 -- 37.708: 这样的方位是相对的
+38.206 -- 39.308: 是可以变化的
+40.286 -- 41.804: 比如这幅图片中
+42.302 -- 44.652: 每个人都有自己的前后左右
+45.662 -- 54.348: 用数学的语言来说每个人都可以在自己的位置建立一个平面直角坐标系来描述自己的前后左右
+55.262 -- 62.540: 你很容易想象随着他们的走动和转身这些坐标系也会跟着移动和旋转
+64.478 -- 70.764: 立场的不同或者观察问题的角度的不同会对人们的认知产生怎样的影响呢
+71.806 -- 74.828: 请看下面这一段几秒钟的无声视频
+100.318 -- 106.188: 这两只猫各自建立了一个平面直角坐标系用用描述同样的平面曲线
+106.814 -- 108.588: 得到的方程不相同
+109.534 -- 111.948: 下面我们来分析一下其中的原理
+112.958 -- 116.652: 在平面直角坐标系中有这样一个向量阿法
+117.630 -- 120.652: 它与 X 轴正向之间的夹角为欧米伽
+121.662 -- 123.244: 阿法的长度为 R
+124.222 -- 126.444: 我们很容易算出阿尔法的坐标
+127.390 -- 132.396: 两个分量分别为 R COSINE 欧米E伽和 R SINE 欧ME伽
+133.406 -- 137.452: 如果我们把阿尔法逆时针旋转快得到贝EA
+138.014 -- 140.236: 那么贝E塔的长度也是 R
+140.926 -- 144.908: 贝E塔与 X 轴正向之间的夹角为欧米伽加 FI
+145.886 -- 153.100: 因而贝ETA 的两个坐标分量分别为 R COSIN 欧米伽加 F 和 R SINE 欧米伽加I
+154.046 -- 157.004: 根据两角和的正弦和余弦公式
+157.950 -- 159.372: 以及取证的惩罚
+160.318 -- 165.388: 我们可以把贝E塔表示成下面这个艾加方阵与阿尔法的乘积
+166.334 -- 170.220: 也许我在中间搭一个桥你会更容易理解一些
+171.198 -- 177.932: 如果我们把阿尔法的坐标记为 X Y 那么贝E塔的坐标算出来就是这样的
+179.006 -- 182.188: 于是我们就得到这样一个坐标变换公式
+183.102 -- 186.444: 当然你也可以把它写成右边这个形式
+187.198 -- 188.876: 二者本质上是一样的
+189.502 -- 191.724: 都表示上面所说的旋转变换
+192.670 -- 194.572: 下面我们来看看他有什么用
+195.646 -- 202.668: 对于负七 U 平方加十二 U V 加二 V 平方等于二十这个方程
+203.678 -- 207.116: 我们不容易一眼看出它表示什么曲线
+208.030 -- 210.924: 利用下面这个公式做一下变量替换
+211.902 -- 213.900: 坏了看起来更加复杂了
+214.686 -- 218.284: 别怕我们可以把它展开重新整理一下
+218.974 -- 220.716: 哎怎么越来越复杂了
+221.886 -- 223.756: 你见过黎明前的黑暗吗
+224.702 -- 226.380: 你听过稻春寒吗
+227.326 -- 229.644: 穿过了黎明你就走出了黑夜
+230.302 -- 232.652: 经历的春寒也就告别了严冬
+233.630 -- 234.508: 走到这一步
+235.102 -- 238.796: 如果我们能让括号里面变成零就好了
+242.878 -- 243.468: 为此
+244.094 -- 246.092: 把这个式子改造一下
+247.134 -- 250.092: 两边同时乘以负的六分之一
+250.718 -- 252.780: 并且调一下各项的顺序
+253.886 -- 256.940: 注意这里的 COSIN 肯定不能等于零
+258.014 -- 260.460: 因为如果这里的 COSIN 也等于零
+261.118 -- 263.116: 你会得到 SN法也等于零
+263.678 -- 268.172: 我们知道 SINI 与 COSIN P 不可能同时为零
+268.958 -- 271.820: 可见这里的 COSI 法不等于零
+272.702 -- 278.348: 于是我们可以在这个等式的两边同时乘以 COSIN 平方方的倒数
+279.358 -- 282.092: 得到下面这个关于 TEGE F 的方程
+284.126 -- 289.260: 从这里可以解出 T的 FI 等于二或者负的二分之一
+291.390 -- 296.844: 我们可以利用这个直角三角形帮我们求出的正弦和余弦
+300.062 -- 303.340: 注意正切函数的最小正周期是派
+304.254 -- 307.436: 所以天减的 F等于二的时候
+308.062 -- 310.028: 翻除了这个锐角之外
+310.590 -- 311.852: 还可以在加派
+312.798 -- 317.580: F为锐角时 SIN  PI等于五分之二倍根号五
+318.558 -- 321.068: COSIN 等于五分之根号五
+322.046 -- 323.916: 这里虚线对应的情形下
+324.414 -- 327.916: S法等于负的五分之二倍根号五
+328.862 -- 331.820: COSIN 等于负的五分之根号五
+333.726 -- 334.348: 类似的
+334.846 -- 338.572: 看见的发等于负二分之一也对应两种情形
+341.534 -- 343.660: 我们先看前面这两种情形
+344.638 -- 348.716: 把 SIN F 和 COSINI 带入上面这个式子
+349.374 -- 354.188: 等号左边变成五 X 平方减十 Y 平方
+355.134 -- 356.524: 现在看到曙光了吧
+357.246 -- 361.356: 我们只要把这个等式的两边同时乘以二十分之一
+362.270 -- 364.556: 就可以得到下面这个标准翻程
+365.534 -- 367.884: 他表示的曲线为酸曲线
+368.894 -- 371.724: 这是刚才那只大猫眼中的双曲线
+372.318 -- 373.484: 方程是这样的
+374.526 -- 375.852: 经过一个旋转变换
+376.414 -- 382.860: 其中 SIN 等于五分之二倍根号五 COSIN  等于五分之根号五
+383.806 -- 387.500: 相当于把圆坐标系逆时针旋转一个锐G角 FIE
+388.510 -- 394.028: 在这个新的直角坐标系中原来的双曲线的方程化为这个标准方程
+396.190 -- 399.980: 而刚才那只小猫建立的直角坐标系是这样的
+401.662 -- 405.676: 这里的发的正弦为负的五分之二倍根号五
+406.270 -- 408.620: 余行为负的五分之根号五
+410.558 -- 415.468: 请大家自己试一下 TEE F 等于负二分之一的情形
+416.830 -- 421.324: 把这里的 SIN F 和 COSIN 的值垫入上面的式子
+423.326 -- 424.620: 我们来对一下答案
+426.654 -- 432.620: 其中 SIN等于五分之根号五对应的 F是这个钝角
+433.662 -- 435.084: 如果多选张派
+435.774 -- 437.644: 得到的坐标系是这样的
+441.150 -- 442.316: 在线线代数中
+442.910 -- 445.612: 这样的多项式称为二次形
+446.654 -- 449.228: 他可以表示成举证的成积的形式
+450.270 -- 452.812: 中间这个矩阵是一个对称矩阵
+454.750 -- 459.980: 刚才所说的这个坐标变换公式也可以用举证来表示
+460.862 -- 463.052: 这是一类特殊的整交变换
+463.678 -- 464.716: 他表示旋转
+465.630 -- 470.284: 利用这个旋转变换可以把上面的二次形化为标准型
+471.294 -- 475.532: 例如这里取 SIN 等于五分之二倍根号五
+476.094 -- 478.988: COSIN  等于五分之根号五的时候
+479.966 -- 482.988: 这三个矩阵的乘积是一个对焦矩阵
+483.454 -- 487.436: 主对角线上的两个元素分别为五和负十
+488.318 -- 494.348: 下面这三个矩阵的乘积等于五 X 平方减十 Y 平方
+495.390 -- 496.812: 这也是一个二次型
+497.790 -- 500.748: 其中只有平方向没有交叉项
+501.662 -- 503.884: 它是上面这个二次形的标准型
+504.830 -- 505.836: 顺便说一下
+506.334 -- 511.084: 这里的平方向前面的系数就是这个对称矩阵的特征值
+513.022 -- 516.940: 我们可以把 SIN等于五分之二倍根号五
+517.630 -- 524.236: CSI 等于五分之根号五构成的这个向量在平面直角坐标系中画出来
+524.798 -- 528.460: 它就是这个紫红色的向量它的长度等于一
+529.470 -- 536.812: 这个矩阵中的第二列对应的向量负 S IN F COSIN F 就是这个蓝色的向量
+537.534 -- 539.116: 它的长度也等于一
+539.774 -- 542.828: 而且他与这个紫红色的向链垂直
+543.774 -- 546.924: 这两个向量是这个矩阵的特征向量
+547.518 -- 550.412: 分别对应于特征值五和负十
+551.390 -- 555.820: 用正交变换把上面的二次形化为标准型之后
+556.478 -- 562.124: 这个二次曲线的方程就可以进一步化为我们所熟悉的标准型了
+563.102 -- 568.556: 从这里可以看出原来这个方程所表示的曲线为双曲线
+569.534 -- 571.532: 接下来我们进一步问
+572.862 -- 575.180: 这个方程表示什么曲线
+577.278 -- 579.820: 注意与前面这个例子相比
+581.086 -- 582.572: 这里出num threads: 12
+decoding method: greedy_search
+Elapsed seconds: 27.896 s
+Real time factor (RTF): 27.896 / 773.805 = 0.036
+现了一次项
+583.902 -- 585.932: 受到前面这个例子的启发
+587.454 -- 589.196: 我们先做旋转变换
+589.790 -- 591.404: 具体的写出来是这样的
+592.190 -- 594.732: 把 U 和 V 带入上面的方程
+595.678 -- 604.492: 化简之后就是五 X 平方减十 Y 平方加十 X 减四十 Y 等于二十
+606.558 -- 608.428: 两边同时乘以五分之一
+608.926 -- 616.428: 进一步简化为 X 平方减二 Y 平方加二 X 减八 Y 等于四
+617.534 -- 625.420: 这里的 X 的平方加二 X 以及负二 Y 平方减八 Y 都可以配方
+627.358 -- 634.060: 配方后得到 X 加一的平方减去两倍的 Y 加二的平方等于负三
+636.094 -- 637.676: 再做一个平移变换
+638.430 -- 640.812: 令 X 加一等于 X 一撇
+641.918 -- 643.756: Y 加二等于 Y 一撇
+644.926 -- 647.660: 也就是 X 等于 X 一撇减一
+648.606 -- 650.732: Y 等于 Y 一撇减二
+651.326 -- 652.460: 那么这个方程
+652.958 -- 658.252: 就变成 X 一撇的平方减去两倍的 Y 一撇的平方
+658.782 -- 659.660: 等于负三
+661.662 -- 664.012: 两边同时乘以负的三分之一
+664.894 -- 668.524: 就可以把它转化为我们熟悉的标准方程了
+670.654 -- 675.436: 从这里可以看出原方程表示的曲线为酸曲线
+676.510 -- 678.476: 我们来看一下对应的图形
+679.678 -- 681.900: 原方程对应的图形是这样的
+682.814 -- 684.108: 做一个旋转变换
+685.086 -- 687.852: 把圆坐标系逆时针旋转快
+688.798 -- 698.348: 在新坐标系中原来的曲线的方程化为 X 的平方减二 Y 平方加二 X 减八 Y 等于四
+699.262 -- 700.332: 我们把它摆正
+701.278 -- 704.268: 对这个含有一次项的方程进行配方
+705.182 -- 707.308: 从而确定平移变化的表达式
+709.246 -- 710.412: 体现在图形上
+711.038 -- 716.652: 就是把 X O Y 坐标系向左偏移一个单位向下平移两个单位
+717.662 -- 719.244: 得到这个红色的坐标系
+720.318 -- 721.900: 在这个红色的坐标系中
+722.462 -- 725.676: 原来的曲线方程化为这个标准方程
+726.718 -- 730.156: 这个例子中的做法可以推广到一般的情形
+731.166 -- 737.580: 学习了线形代数之后你不仅可以知道如何用旋转变换和平移变换
+738.110 -- 742.828: 把平面直角坐标系中的二次曲线的一般翻程化为标准翻程
+744.126 -- 750.572: 还会知道如何把空间直角坐标系中的二次曲面的一般方程化为标准方程
+751.582 -- 755.180: 其中的理论听起来可能会让人觉得有些抽象
+755.806 -- 759.916: 但背后的思想方法与这个直观的例子是一样的
+762.750 -- 764.684: 这一讲就介绍到这里

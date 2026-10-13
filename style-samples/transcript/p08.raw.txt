@@ -1,0 +1,126 @@
+D:\a\sherpa-onnx\sherpa-onnx\sherpa-onnx\csrc\parse-options.cc:Read:374 'E:\VibeCoding\AgentXiang\.tools\sherpa\sherpa-onnx-v1.13.8-win-x64-shared-MD-Release\bin\sherpa-onnx-vad-with-offline-asr.exe' '--silero-vad-model=E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx' '--sense-voice-model=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx' '--tokens=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt' --sense-voice-language=zh --num-threads=12 'E:\VibeCoding\AgentXiang\style-samples\wav\p08.wav' 
+
+VadModelConfig(silero_vad=SileroVadModelConfig(model="E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=512, neg_threshold=-1), ten_vad=TenVadModelConfig(model="", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=256), sample_rate=16000, num_threads=1, provider="cpu", debug=False)
+OfflineRecognizerConfig(feat_config=FeatureExtractorConfig(sampling_rate=16000, feature_dim=80, low_freq=20, high_freq=-400, dither=0, normalize_samples=True, snip_edges=False), model_config=OfflineModelConfig(transducer=OfflineTransducerModelConfig(encoder_filename="", decoder_filename="", joiner_filename=""), paraformer=OfflineParaformerModelConfig(model=""), nemo_ctc=OfflineNemoEncDecCtcModelConfig(model=""), whisper=OfflineWhisperModelConfig(encoder="", decoder="", language="", task="transcribe", tail_paddings=-1, enable_token_timestamps=False, enable_segment_timestamps=False, ), fire_red_asr=OfflineFireRedAsrModelConfig(encoder="", decoder=""), tdnn=OfflineTdnnModelConfig(model=""), zipformer_ctc=OfflineZipformerCtcModelConfig(model=""), wenet_ctc=OfflineWenetCtcModelConfig(model=""), sense_voice=OfflineSenseVoiceModelConfig(model="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx", language="zh", use_itn=False), moonshine=OfflineMoonshineModelConfig(preprocessor="", encoder="", uncached_decoder="", cached_decoder="", merged_decoder="", decoder="", ), dolphin=OfflineDolphinModelConfig(model=""), canary=OfflineCanaryModelConfig(encoder="", decoder="", src_lang="", tgt_lang="", use_pnc=True), cohere_transcribe=OfflineCohereTranscribeModelConfig(encoder="", decoder="", language="", use_punct=True, use_itn=True), omnilingual=OfflineOmnilingualAsrCtcModelConfig(model=""), funasr_nano=OfflineFunASRNanoModelConfig(encoder_adaptor="", llm="", embedding="", tokenizer="", system_prompt="You are a helpful assistant.", user_prompt="语音转写：", max_new_tokens=512, temperature=1e-06, top_p=0.8, seed=42, language="", itn=True, hotwords=""), medasr=OfflineMedAsrCtcModelConfig(model=""), fire_red_asr_ctc=OfflineFireRedAsrCtcModelConfig(model=""), qwen3_asr=OfflineQwen3ASRModelConfig(conv_frontend="", encoder="", decoder="", tokenizer="", hotwords="", max_total_len=512, max_new_tokens=128, temperature=1e-06, top_p=0.8, seed=42), telespeech_ctc="", tokens="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt", num_threads=12, debug=False, provider="cpu", model_type="", modeling_unit="cjkchar", bpe_vocab=""), lm_config=OfflineLMConfig(model="", scale=0.5, lodr_scale=0.01, lodr_fst="", lodr_backoff_id=-1), ctc_fst_decoder_config=OfflineCtcFstDecoderConfig(graph="", max_active=3000), decoding_method="greedy_search", max_active_paths=4, hotwords_file="", hotwords_score=1.5, blank_penalty=0, rule_fsts="", rule_fars="", hr=HomophoneReplacerConfig(lexicon="", rule_fsts=""))
+Creating recognizer ...
+Recognizer created!
+Started
+Reading: E:\VibeCoding\AgentXiang\style-samples\wav\p08.wav
+Started!
+15.518 -- 19.436: 这一讲介绍向量向量有时也被称为史量
+19.934 -- 27.692: 特别是在物理学中人们把既有大小又有方向的物理量称为矢量例如利和位移都是矢量
+28.318 -- 36.268: 人们常常用有向线段来直观的表示这些既有大小又有方向能量长度代表大小箭头指示方向
+36.766 -- 39.660: 这样的有限线段也被称为几何向量
+40.382 -- 44.236: 我们这里要着重介绍的是线性代数中的 N 维 向量
+44.926 -- 47.628: 它本质上是由 N 个数构成的有序数组
+48.286 -- 50.924: 从形式上看 N 维 向量是特殊的取证
+51.422 -- 57.932: 如果像这样写成一行就称为 N 为行向量如果像这样写成一列就称为 N 为列上量
+58.910 -- 62.092: 顺便说一下代数学中还有抽象的向量
+63.326 -- 70.540: 物理中的矢量几何中的向量以及代数中的向量这三个概念之间有着密切的联系
+71.422 -- 76.012: 例如我们常常用几何向量作为物理中的矢量的图示
+76.478 -- 79.148: 而几何向量的运算常常具有物理意义
+79.806 -- 84.556: 例如向量加法的平行四边形法则它的物理意义是二力合成
+85.758 -- 90.092: 而向量的数量机的物理意义是很利沿直线对支点做工
+91.934 -- 107.660: 对于几何向量建立了坐标系之后几何向量的坐标就是代数向量例如在平面直角坐标系中这个向量阿尔法的坐标是 A 一 A 二我们可以把它写成一个行向量并且把阿尔法和这个横向量等同起来
+108.286 -- 112.332: 在代数中一些和向量有关的概念也具有几何意义
+112.830 -- 119.564: 比如说线性代数中有一个非常重要的概念是向量的线性相关性这也是线性代数中的难点之一
+120.190 -- 126.668: 比如这里还有一个限量贝ETA那么限量阿尔法与贝E塔线性相关的几何意义是阿尔法与贝E塔贡献
+127.358 -- 145.228: 下面我们就着重介绍一下线性代数中的 N 为向量我们把这样一个一行 N 列的矩证称为 N 为行向量这样的 N 行一列的矩阵称为 N 为列向量其中 A I 称为 D I 一个分量这里的 I 是大于等于一小于等于 N 的整数
+146.014 -- 149.708: N 为含向量和 N 为列向量统称为 N 为向量
+150.206 -- 151.692: 有时候也简称为向量
+152.286 -- 158.508: 注意一维向量就是一个数二维向量有两个分量三维向量有三个分量以此类推
+159.422 -- 165.996: 前面说过 N 维向量可以看成特殊的矩阵而矩阵有线性运算及加法和速成
+166.526 -- 175.436: 像一般的举证那样对 N 维向量进行加法和数成运算就是 N 维向量的加法和数成它们统称为 N 维向量的线性运算
+175.998 -- 179.372: 这么说可能太抽象了也许直观一点更好理解
+179.902 -- 189.964: 这是一个平面直角坐标系向量阿尔法的坐标为 A 一 A 二贝ETA的坐标为 B 一 B 二按照平行四边形法则我们可以得到阿尔法加贝ETA
+190.526 -- 195.852: 下面来看阿法加贝塔的坐标先看横坐标注意这个直角三角形
+196.382 -- 200.812: 和这个直角三角形全等于是可以看出这一段对应 B 一
+201.726 -- 206.700: 而这一段对应 A 一所以阿尔法加贝E塔的横坐标是 A 一加 B 一
+207.422 -- 210.444: 用类似的办法可以看出阿法加贝塔的纵坐标
+213.470 -- 217.356: 从这里可以看出阿法加贝塔的纵坐标是 A 二加 B 二
+217.822 -- 223.436: 可见只要把阿尔法和贝E塔的坐标对应相加就可以得到阿尔法加贝塔的坐标了
+223.902 -- 232.780: 一般的设 N 为航向量阿尔法的 N 个分量依次为 A 一 A 二到 A N 贝E塔的 N 个分量依次为 B 一 B 二到 B N
+233.342 -- 239.628: 那么阿尔法加贝E塔的 N 个分量依次为 A 一加 B 一 A 二加 B 二一直到 A N 加 B N
+240.126 -- 246.764: N  列向量的情形是类似的从这里可以看出 N 为 向量的加法和矩证的加法是一致的
+248.510 -- 253.292: 我们再来看数成这是我的一寸证件照和两寸证件照
+254.142 -- 257.612: 其中一寸证件罩是二点五厘米乘以三点五厘米的
+258.078 -- 261.388: 两寸证件罩是三点五厘米乘以四点九厘米的
+262.142 -- 268.620: 我原来一直误以为两寸证件罩的长度和宽度分别是一寸证件罩的长和宽的两倍
+269.118 -- 271.756: 后来上网查了一下才知道我原来理解错了
+272.862 -- 275.628: 把这两张照片放在直角坐标系中
+276.606 -- 279.468: 这个向量阿法的坐标是二点五三点五
+280.286 -- 283.308: 这个向量贝E塔 的坐标是三点五四点九
+284.478 -- 287.308: 注意三点五是二点五的一点四倍
+287.774 -- 290.124: 四点九是三点五的一点四倍
+290.974 -- 292.684: 按照举证的速成来说
+293.438 -- 297.420: 我们可以把 BETA表示成一点四与阿法的乘积
+298.558 -- 304.108: 一般的设 N 为含向量阿尔法的 N 个分量以此为 A 一 A 二到 A N
+305.054 -- 314.476: K 是一个数那么 K 与阿尔法的乘积即为 K阿尔法它的 N 个分量依次为 K A 一 K A 二一直到 K A N
+315.454 -- 317.644: N围跌下来的情形是类似的
+318.558 -- 323.276: 从这里可以看出 N 为向量的速成与矩证的速成是一致的
+324.894 -- 325.772: 请大家注意
+326.302 -- 332.620: 如果一个 N 为向量的每一个分量都是零我们就称之为一个 N 为里向量简记为零
+333.662 -- 339.372: 很多时候这样剪辑是比较方便的我们只要联系上下文就可以知道它的含义
+341.310 -- 344.652: 作为负矩阵的特例我们有负向量的概念
+345.918 -- 353.516: 假设 N 为含向量阿尔法的 N 个分量依次为 A 一 A 二到 A N 那么它的负向量即为负阿尔法
+354.110 -- 358.156: 它的 N 个分量依次为负 A 一负 A 二一直到负 A N
+358.910 -- 360.812: 横围跌下来的情形是类似的
+361.630 -- 362.636: 很容易看出来
+363.198 -- 366.156: 负阿尔法等于负一和阿尔法的乘积
+368.126 -- 370.124: 接下来介绍下量组的概念
+370.622 -- 372.620: 为此我们先来看一个实例
+373.086 -- 376.108: 比如说这是四位同学的某一门课程的成绩表
+376.734 -- 384.204: 表格中的每一行都构成一个四维的航向量依次结为阿法一阿法二阿法三阿法四
+384.830 -- 391.852: 如果你是赵同学的话我想你可能只要关注其中的阿法一就可以了因为其余的限量是别人的隐私
+392.382 -- 395.692: 然而这门课程的老师就要关注这里所有的向量了
+396.286 -- 404.172: 如果你是这门课的老师的话你可能还会从另一个角度来看这个表格把表格中每一列的分数构成一个列向量
+404.766 -- 407.884: 比如这里的平时成绩构成一个列向量阿法一
+408.382 -- 413.772: 期中考试的分数构成限量阿尔法二期末考试的分数构成限量阿尔法三
+414.558 -- 417.228: 这些总评成绩构成一个列向量贝E塔
+417.950 -- 425.356: 不管是这里的行向量还是这些列向量作为老师他要关注的不仅仅是一个向量而是一组向量
+426.398 -- 434.188: 一般的假设阿尔法一阿尔法二到阿尔法 S 都是 N 为行向量我们就把它们称为一个 N 为横向量组
+434.846 -- 441.452: 如果阿法一阿法二到阿尔法 S 都是 N 维的列向量我们就把它们称为一个 N 维的列向量组
+442.174 -- 444.268: 比如说这是四维的航向量组
+445.182 -- 446.732: 这是四维的列向量组
+448.190 -- 452.460: 对于 N为列向量下面这个向量组值得特别关注
+453.374 -- 460.076: 注意他们都是 N 为列项量其中每一个列项量只有一个分量是一其余的分量都是零
+460.798 -- 467.116: 以 一的第一个分量是一 E 二的第二个分量是一以此类推 E N 的第 N 个分量是一
+467.870 -- 471.628: 我们把这个向量组称为 N 为基本单位向量组
+472.574 -- 474.124: 航向量的情形是类似的
+475.358 -- 480.620: 好了我们已经有 N 为向量的加法速成以及向量组的概念了
+481.246 -- 484.972: 下面基于这三个概念得到所谓的线性组合的概念
+485.758 -- 487.692: 我们回到前面所说的这个表格
+488.606 -- 494.540: 这里的总评成绩是根据平时期中期末的成num threads: 12
+decoding method: greedy_search
+Elapsed seconds: 26.706 s
+Real time factor (RTF): 26.706 / 715.593 = 0.037
+绩按照一定的比例计算出来的
+495.486 -- 499.948: 比如说第一个同学的总评成绩九十三点五是这样算出来的
+500.510 -- 505.932: 把他的平时乘绩九十乘以百分之十其中乘绩九十乘以百分之二十
+506.622 -- 511.852: 期末成绩乘以百分之七十累加起来就得到这个总评成绩九十三点五
+512.542 -- 515.340: 其他同学的总评成绩也是这样计算出来的
+516.222 -- 535.148: 如果我们把这里的平时成绩期中成绩以及期末成绩对应的向量依次级为阿尔法一阿法二阿尔法三总评成绩对应的这个向量即为 BETA那么根据这一组等式就可以得到 BETA等于零点一阿法一加零点二阿法二加零点七阿法三
+536.030 -- 546.860: 我们把等号右边的这一部分称为阿法一阿法二阿尔法三的一个线性组合其中的零点一零点二零点七称为这个线性组合的组合系数
+548.318 -- 554.796: 一般的设阿法一阿法二到阿法 S 是 N 为的行向量组或者是 N 维的列向量组
+555.294 -- 557.516: K 一 K 二到 K S 是数
+558.238 -- 570.732: 我们把 K 一阿法一加 K 二阿法二一直加到 K S阿法 S 称为阿法一阿尔法二到阿法 S 的一个线性组合其中的 K 一 K 二到 K S 称为组合系数
+571.678 -- 579.628: 如果某一个向量贝ETA能够写成这样的线形组合我们就说贝ETA 能够由阿法一阿法二到阿法 S 进行表示
+580.126 -- 603.804: 也就是说假设阿法一阿法二到阿尔法 S 以及贝ETA都是 N 为行向量或者都是 N 为列向量如果存在数 K 一 K 二到 K S 使得下面这个等式成立我们就说贝ET塔能由向量组阿法一阿法二到阿尔法 S 线性表示比如说这里的向量贝E塔能够由这个向量组阿法一阿法二阿法三线性表示
+604.350 -- 609.004: 又比如这个 N 为列向量阿尔法能够拆成这样 N 个列向量的和
+609.886 -- 613.036: 而这个合式又可以进一步改写成这个形式
+613.694 -- 615.116: 按照前面这个记号
+615.742 -- 622.284: 我们可以把这个式子简介为 A 一 E 一加 A 二 E 二一直加到 A N E N
+623.038 -- 631.340: 由此可见任何一个 N 为列向量阿尔法都可以由 N 为基本单位向量组一一一二到 E N 现性表示
+632.222 -- 643.820: 我们再回来看一下这个表格请大家思考一下如果要根据这四个向量反过来求平时期中期末的成绩在总评成绩里面所占的比例我们应该怎么做
+644.478 -- 649.740: 换句话说我们怎么样去求下面这个等式中的 X 一 X 二 X 三
+650.686 -- 654.636: 大家看是不是就要求解这样一个线性范程组啊对吧
+655.358 -- 659.596: 可见上面这个线性方程组和下面这个方程本质上是一样的
+660.510 -- 670.892: 另外请大家看一下如果我们把这个线形范程组的系数矩阵即为 A 那么这个矩阵 A 是不是就由这三个向量阿法一阿法二阿尔法三拼起来的呀
+671.678 -- 684.332: 如果我们把这里的 X 一 X 二 X 三构成的这个三维的列向量计为 X 那么根据我们此前介绍过的矩证的乘法这个线形方程组是不是又可以表示成 A X 等于贝EA
+685.086 -- 691.692: 所以从这里面可以看出线性方程组矩证向量这三者之间有着密切的联系
+692.318 -- 697.164: 大家将来在学习线性代数的时候要特别注意这一点做到融会贯通
+698.494 -- 701.356: 关于 N  向量的基本概念及其线性运算
+701.886 -- 702.764: 下链组
+703.262 -- 704.268: 线性组合
+704.798 -- 706.028: 以及线性表示
+706.590 -- 707.884: 我们就介绍到这里

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentXiang</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <div class="brand">AgentXiang</div>
+    <div class="picker">
+      <label>当前机器人</label>
+      <select id="botPick"></select>
+      <div id="botStatus" class="status"></div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="side-foot">
+      <span id="apiState" class="pill">—</span>
+    </div>
+  </aside>
+
+  <main id="main">
+    <header id="head">
+      <h1 id="title">概览</h1>
+      <div id="headActions" class="actions"></div>
+    </header>
+    <section id="content"><div class="empty">载入中…</div></section>
+  </main>
+</div>
+
+<div id="toast" class="toast"></div>
+<script>
+  // 前端出错时直接显示出来，避免界面只是停在「载入中」
+  window.addEventListener('error', (e) => {
+    const box = document.getElementById('content');
+    if (box) box.textContent = '前端错误：' + (e.message || e.error) + '  @' + (e.filename || '').split('/').pop() + ':' + e.lineno;
+  });
+</script>
+<script src="/app.js"></script>
+</body>
+</html>

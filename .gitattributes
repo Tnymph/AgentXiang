@@ -1,0 +1,21 @@
+# 统一按 LF 走。
+# 项目里连 .cmd 都是 LF 且在 Windows 上跑得好好的（实测），
+# 而 phone/*.sh 到手机上必须是 LF —— bash 会把 \r 当成命令的一部分。
+# 这条会压过每个人本地的 core.autocrlf 设置，clone 出来就是一致的。
+* text=auto eol=lf
+
+# 二进制别当文本处理
+*.exe binary
+*.dll binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.wav binary
+*.mp3 binary
+*.m4a binary
+*.onnx binary
+*.pth binary
+*.pt binary
+*.index binary

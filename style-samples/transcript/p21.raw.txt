@@ -1,0 +1,129 @@
+D:\a\sherpa-onnx\sherpa-onnx\sherpa-onnx\csrc\parse-options.cc:Read:374 'E:\VibeCoding\AgentXiang\.tools\sherpa\sherpa-onnx-v1.13.8-win-x64-shared-MD-Release\bin\sherpa-onnx-vad-with-offline-asr.exe' '--silero-vad-model=E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx' '--sense-voice-model=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx' '--tokens=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt' --sense-voice-language=zh --num-threads=12 'E:\VibeCoding\AgentXiang\style-samples\wav\p21.wav' 
+
+VadModelConfig(silero_vad=SileroVadModelConfig(model="E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=512, neg_threshold=-1), ten_vad=TenVadModelConfig(model="", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=256), sample_rate=16000, num_threads=1, provider="cpu", debug=False)
+OfflineRecognizerConfig(feat_config=FeatureExtractorConfig(sampling_rate=16000, feature_dim=80, low_freq=20, high_freq=-400, dither=0, normalize_samples=True, snip_edges=False), model_config=OfflineModelConfig(transducer=OfflineTransducerModelConfig(encoder_filename="", decoder_filename="", joiner_filename=""), paraformer=OfflineParaformerModelConfig(model=""), nemo_ctc=OfflineNemoEncDecCtcModelConfig(model=""), whisper=OfflineWhisperModelConfig(encoder="", decoder="", language="", task="transcribe", tail_paddings=-1, enable_token_timestamps=False, enable_segment_timestamps=False, ), fire_red_asr=OfflineFireRedAsrModelConfig(encoder="", decoder=""), tdnn=OfflineTdnnModelConfig(model=""), zipformer_ctc=OfflineZipformerCtcModelConfig(model=""), wenet_ctc=OfflineWenetCtcModelConfig(model=""), sense_voice=OfflineSenseVoiceModelConfig(model="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx", language="zh", use_itn=False), moonshine=OfflineMoonshineModelConfig(preprocessor="", encoder="", uncached_decoder="", cached_decoder="", merged_decoder="", decoder="", ), dolphin=OfflineDolphinModelConfig(model=""), canary=OfflineCanaryModelConfig(encoder="", decoder="", src_lang="", tgt_lang="", use_pnc=True), cohere_transcribe=OfflineCohereTranscribeModelConfig(encoder="", decoder="", language="", use_punct=True, use_itn=True), omnilingual=OfflineOmnilingualAsrCtcModelConfig(model=""), funasr_nano=OfflineFunASRNanoModelConfig(encoder_adaptor="", llm="", embedding="", tokenizer="", system_prompt="You are a helpful assistant.", user_prompt="语音转写：", max_new_tokens=512, temperature=1e-06, top_p=0.8, seed=42, language="", itn=True, hotwords=""), medasr=OfflineMedAsrCtcModelConfig(model=""), fire_red_asr_ctc=OfflineFireRedAsrCtcModelConfig(model=""), qwen3_asr=OfflineQwen3ASRModelConfig(conv_frontend="", encoder="", decoder="", tokenizer="", hotwords="", max_total_len=512, max_new_tokens=128, temperature=1e-06, top_p=0.8, seed=42), telespeech_ctc="", tokens="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt", num_threads=12, debug=False, provider="cpu", model_type="", modeling_unit="cjkchar", bpe_vocab=""), lm_config=OfflineLMConfig(model="", scale=0.5, lodr_scale=0.01, lodr_fst="", lodr_backoff_id=-1), ctc_fst_decoder_config=OfflineCtcFstDecoderConfig(graph="", max_active=3000), decoding_method="greedy_search", max_active_paths=4, hotwords_file="", hotwords_score=1.5, blank_penalty=0, rule_fsts="", rule_fars="", hr=HomophoneReplacerConfig(lexicon="", rule_fsts=""))
+Creating recognizer ...
+Recognizer created!
+Started
+Reading: E:\VibeCoding\AgentXiang\style-samples\wav\p21.wav
+Started!
+15.134 -- 20.620: 这一讲介绍多项式的根这个话题说来话长我在这里只能长话短说了
+21.374 -- 23.212: 首先说一下代数基本定理
+23.806 -- 26.572: 假设 F X 是一个负系数多项式
+27.038 -- 30.188: 这里的 N 大于等于一 A N 不等于零
+30.782 -- 33.708: 那么 F X 在复数范围内至少有一个根
+34.206 -- 47.180: 德国数学家高斯在一七九七年首先证明了这个定理高斯出生于一七七七年他在一七九七年证明这个定理的时候还非常年轻他一生对这个定理一共给出了四个证明
+47.742 -- 53.100: 今天人们用数学专业的数学分析或复变函数等课程中的知识可以证明这个定理
+53.598 -- 55.596: 我在这里就不展开介绍了
+56.574 -- 65.356: 用代数基本定理可以进一步证明下面的因式分解定理这个定理说的是上述多项式 F X 可以分解为如下形式
+66.366 -- 69.452: 其中 X 一 X 二到 X N 是复数
+70.078 -- 75.756: 请注意如果不计较音式的次序的话上面这个分解式是由 F X 唯一确定的
+76.286 -- 79.916: 其中 X 一 X 二到 X  N 是 F X 的 N 个根
+80.478 -- 82.348: 注意 F X 可能有重根
+82.846 -- 92.140: 如果有重根的话重根按重数计比如说二重根算两个三重根算三个以此类推我们来看几个熟悉的例子吧
+92.606 -- 100.684: 第一个是 X 的平方减去二 X 加一它可以分解成为 X 减一的平方这个多项是有两个相等的时根
+101.150 -- 112.364: 第二个是 X 平方加一它可以分解成为 X 减 I 乘以 X 加 I 它的两个根分别是正负 I 这里的 I 是虚数单位 I 的平方等于负一
+112.830 -- 124.524: 一般的如果 A 不等于零那么 A X 平方加 B X 加 C 可以分解为这个形式其中的 DEATTA 等于 B 平方减去四 A C 它是这个一元二次多项式的探别式
+125.054 -- 134.572: 如果把这个多项式的两个根分别记为 X 一和 X 二那么 X 一加 X 二等于负的 A 分之 B X 一乘以 X 二等于 A 分之 C
+135.102 -- 144.204: 请注意我们可以不用把这个 X 一 X 二求出来就可以知道 X 一加 X 二等于负的 F 分之 B X 一乘以 X 二等于 F分之 C
+144.702 -- 151.596: 事实上根据刚才所说的因式分解定理我们可以假设 A X 平方加 B X 加 C 有这样一个分解式
+152.126 -- 153.612: 注意这里的 A 不等于零
+154.110 -- 155.884: 把这个等号的右边展开
+156.350 -- 158.284: 整理一下得到的结果是这样的
+158.846 -- 161.452: 把它和这个等化的左边比较一下
+161.950 -- 168.684: 就可以得到 X 一加 X 二等于负的 A 分之 B X 一乘以 X 二等于 A 分之 C
+169.470 -- 173.868: 这个方法可以推广到一般的情形得到下面的韦答定理
+174.398 -- 181.868: 这里所说的韦达是一位法国数学家他生活的年代相当于我国明朝的嘉靖到万历年间
+182.334 -- 185.164: 韦拉蒂理揭示了多项式的根与系数的关系
+185.886 -- 191.372: 具体的说对于这样一个多项式 F X 其中的 N 大于等于一 A N 不等于零
+191.934 -- 195.244: 假设它的 N 个根为 X 一 X 二到 X N
+195.806 -- 197.260: 注意这里可能有虫根
+197.950 -- 203.244: 仿照这个做法可以得到 F X 的这 N 个根与它的系数之间有如下关系
+204.670 -- 209.452: 其中 X 一到 X N 的和等于负的 A N 分之 A N 减一
+210.014 -- 214.796: X 一到 X N 的连乘积等于负一的 N 次方乘以 A N 分之 A 零
+215.326 -- 220.652: 特别的如果这里的 A N 等于一那么这些等式的右边的分母就可以不写了
+221.342 -- 230.572: 例如这里的 X 一到 X N 的和就等于负的 A N 减一 X 一到 X N 的连乘积就等于负一的 N 次方乘以常数项 A 零
+231.102 -- 238.476: 注意最后这个等式启发我们如果这里的 X 一到 X N 都是整数那么他们就应该是阐述下 A 零的因素
+239.422 -- 241.292: 事实上我们有如下定理
+241.822 -- 245.548: 假设 F X 是一个首相系数唯一的整系数多项式
+246.078 -- 248.652: 如果有理说 R 是 F X 的根
+249.214 -- 253.676: 注意我说的是如果因为这样的多项式 F X 不一定有有离感
+254.238 -- 262.220: 如果有理说 R 是 F X 的根那么可以证明 R 一定是整数并且 R 一定是这个常数上 A 零的因数
+262.974 -- 265.228: 要证明这个电理还是有点麻烦的
+265.886 -- 269.228: 需要用到高斯的关于本源多相式的几个结论
+270.398 -- 273.516: 下面我们举一个例子作为这个定理的一个应用
+274.206 -- 280.204: 假设多项式 F X 是由这样一个三阶行列式给出的我们来求 F X 的根
+281.086 -- 289.548: 请注意在以后的线性代数课程中会介绍矩证的特征值和特征多项式的概念到时候你会遇到像这样的行列式
+290.078 -- 295.916: 面对这样的行列式需要随机应变有时候可以利用行列式的性质来化简计算
+296.414 -- 298.668: 有时候可以用我们接下来要讲的方法
+299.326 -- 303.052: 注意对于三家行列事还是可以用对角线法则来计算的
+303.646 -- 306.892: 把这个三阶行列式的主对角线上的这三个数缠起来
+307.518 -- 312.268: 再加上这里的三负一和这个负一的产机也就是加三
+312.830 -- 317.068: 再加这里的负一零二的乘积也就是加零
+317.630 -- 323.564: 然后减去负一 X 减一和这个负一的产积也就是减去 X 减一
+324.126 -- 328.972: 再减去这里的三零和 X 减二的产积也就是减零
+329.566 -- 336.236: 最后再减去这里的 X 减三负一和二的乘积也就是加上两倍的 X 减三
+336.798 -- 343.180: 把这个式子整理一下得到 X 三次方减去六倍 X 平方加十二倍 X 减去八
+343.742 -- 346.508: 这是一个首相系数唯一的整系数多项式
+347.006 -- 354.060: 根据前面的定理四可以知道如果一个有理数 R是这个多项式的根那么这个 R一定是一个整数
+354.558 -- 360.236: 并且如果 R 是这个多项式的整数根那么 R 就是这个常数向负八的因素
+360.830 -- 366.316: 换句话说 R 只能是正负一正负二正负四正负八中的某一个
+366.942 -- 372.492: 经过验算可以知道 F 二等于零也就是说二是这个多项式 F X 的根
+373.022 -- 377.612: 根据前面的因式分解定理 F X 有一个音式是 X 减二
+378.206 -- 381.036: 下面用 F X 除以 X 减二
+381.598 -- 383.308: 我们可以排一个除法数式
+383.870 -- 387.244: 就像我们在小学阶段所学过的数的除法数式那样
+387.806 -- 393.996: 先试商看看这里算多少和 X 减二相乘得到的首相是 X 的三次方
+395.102 -- 397.548: 对了只要上 X 的平方就可以了
+398.142 -- 404.172: 因为 X 的平方和 X 减二相乘等于 X 的三次方减去两倍的 X 平方
+405.054 -- 408.492: 这里的 X 三次方减去 X 三次方等于零
+409.246 -- 414.156: 负六 X 平方减去负二 X 平方等于负四 X 平方
+414.942 -- 416.748: 把这里的十二 X 抄下来
+417.374 -- 423.276: 现在来看这里算多少和 X 减二相乘得到的首相是负四 X 平方
+424.382 -- 426.924: 对了只要上负四 X 就可以了
+427.870 -- 433.004: 负四 X 和 X 减二相乘等于负四 X 平方加八 X
+433.790 -- 436.684: 把这两个式子相减得到四 X
+437.278 -- 439.148: 把这里的负八抄下来
+439.774 -- 444.556: 现在这里上多少和 X 减二相乘得到的首相是四 X 呢
+445.406 -- 452.076: 这个比较简单只要上四就可以了四和 X 减二相乘正好等于四 X 减八
+452.862 -- 455.084: 这两个式子相减结果等于零
+455.902 -- 461.836: 这里 X 的三次方减去六倍 X 的平方加上十二倍 X 减去八
+462.398 -- 463.436: 是被处室
+464.062 -- 466.540: 这里的 X 减二是除式
+467.134 -- 471.628: 上面的 X 的平方减去四倍 X 加四是商式
+472.286 -- 474.316: 下面的这个零是于是
+475.326 -- 476.268: 一般情况下
+476.830 -- 481.292: 被除式等于除式乘以商式再加上余式
+482.014 -- 483.564: 由于这里的鱼是等于零
+484.126 -- 488.044: 所以这个被除式就等于这个除式乘以这个商式
+488.926 -- 490.572: 于是我们就得到这个等式
+491.230 -- 496.524: 这就把这样一个三次的多项式分解成一个一次多�num threads: 12
+decoding method: greedy_search
+Elapsed seconds: 24.169 s
+Real time factor (RTF): 24.169 / 633.255 = 0.038
+��式和一个二次多项式的乘积
+497.342 -- 502.828: 而这里的 X 平方减四 X 加四很容易进一步分解成为 X 减二的平方
+503.390 -- 508.300: 于是我们就可以把上面的这个多项式 F X 分解为 X 减二的三次方
+508.862 -- 513.836: 由此可见 F X 的三个根为 X 一等于 X 二等于 X 三等于二
+514.654 -- 516.972: 下面我们来把这一讲小结一下
+517.598 -- 520.908: 我们这一讲一共介绍了四个定理和一个例题
+521.534 -- 523.372: 定理一是代数基本定理
+523.838 -- 525.644: 电理二是应式分解电理
+526.270 -- 527.916: 定理三是伟达定理
+528.542 -- 533.804: 定理四说的是假设 F X 是一个首相系数唯一的整系数多项式
+534.366 -- 541.964: 如果有理说 R 是 F X 的根那么 R 一定是整数并且 R 是这个常数项 A 零的因素
+542.718 -- 545.644: 下面的这个立题是这个定理式的一个应用
+546.462 -- 549.036: 我们顺便介绍了多项式的除法术式
+549.758 -- 552.300: 它和数的除法数是是类似的
+553.406 -- 559.692: 再强调一下遇到这样的问题我们需要随机应变不一定每次都要用这里所说的方法
+560.446 -- 564.204: 在以后的线性的数课程中学过行列式的性质以后
+564.670 -- 569.036: 有时候可以利用行列式的性质对这样的行列式进行化解
+569.598 -- 573.164: 这是后话了你在以后的线性代数课程中会学到的
+574.494 -- 578.924: 顺便说一下求多项式的根是一个历史悠久的问题
+579.518 -- 585.612: 除了最简单的一元一次方程之外我们一般比较熟悉的是一元二次方程的求根公式
+586.270 -- 591.084: 三次和四次的情形虽然也有求根公式但是非常复杂
+591.582 -- 596.652: 而一般的五次以及五次以上的情形未必有你想要的那样的求根公式
+597.182 -- 603.628: 如果你对此感兴趣的话可以在课后查阅一下有关资料了解一下假罗瓦理论
+605.182 -- 611.500: 关于多项式的根我们就介绍到这里到此为止我们这门线性代数先修课就全部讲完了
+612.030 -- 615.884: 预祝大家在今后的学习过程中取得更加优异的成绩
+616.382 -- 625.740: 并且把学习思考和实践相结合积极探索勇于创新为祖国为世界贡献自己的智慧和力量

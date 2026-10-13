@@ -1,0 +1,112 @@
+D:\a\sherpa-onnx\sherpa-onnx\sherpa-onnx\csrc\parse-options.cc:Read:374 'E:\VibeCoding\AgentXiang\.tools\sherpa\sherpa-onnx-v1.13.8-win-x64-shared-MD-Release\bin\sherpa-onnx-vad-with-offline-asr.exe' '--silero-vad-model=E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx' '--sense-voice-model=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx' '--tokens=E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt' --sense-voice-language=zh --num-threads=12 'E:\VibeCoding\AgentXiang\style-samples\wav\p06.wav' 
+
+VadModelConfig(silero_vad=SileroVadModelConfig(model="E:\VibeCoding\AgentXiang\.tools\silero_vad_v5.onnx", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=512, neg_threshold=-1), ten_vad=TenVadModelConfig(model="", threshold=0.5, min_silence_duration=0.5, min_speech_duration=0.25, max_speech_duration=20, window_size=256), sample_rate=16000, num_threads=1, provider="cpu", debug=False)
+OfflineRecognizerConfig(feat_config=FeatureExtractorConfig(sampling_rate=16000, feature_dim=80, low_freq=20, high_freq=-400, dither=0, normalize_samples=True, snip_edges=False), model_config=OfflineModelConfig(transducer=OfflineTransducerModelConfig(encoder_filename="", decoder_filename="", joiner_filename=""), paraformer=OfflineParaformerModelConfig(model=""), nemo_ctc=OfflineNemoEncDecCtcModelConfig(model=""), whisper=OfflineWhisperModelConfig(encoder="", decoder="", language="", task="transcribe", tail_paddings=-1, enable_token_timestamps=False, enable_segment_timestamps=False, ), fire_red_asr=OfflineFireRedAsrModelConfig(encoder="", decoder=""), tdnn=OfflineTdnnModelConfig(model=""), zipformer_ctc=OfflineZipformerCtcModelConfig(model=""), wenet_ctc=OfflineWenetCtcModelConfig(model=""), sense_voice=OfflineSenseVoiceModelConfig(model="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\model.int8.onnx", language="zh", use_itn=False), moonshine=OfflineMoonshineModelConfig(preprocessor="", encoder="", uncached_decoder="", cached_decoder="", merged_decoder="", decoder="", ), dolphin=OfflineDolphinModelConfig(model=""), canary=OfflineCanaryModelConfig(encoder="", decoder="", src_lang="", tgt_lang="", use_pnc=True), cohere_transcribe=OfflineCohereTranscribeModelConfig(encoder="", decoder="", language="", use_punct=True, use_itn=True), omnilingual=OfflineOmnilingualAsrCtcModelConfig(model=""), funasr_nano=OfflineFunASRNanoModelConfig(encoder_adaptor="", llm="", embedding="", tokenizer="", system_prompt="You are a helpful assistant.", user_prompt="语音转写：", max_new_tokens=512, temperature=1e-06, top_p=0.8, seed=42, language="", itn=True, hotwords=""), medasr=OfflineMedAsrCtcModelConfig(model=""), fire_red_asr_ctc=OfflineFireRedAsrCtcModelConfig(model=""), qwen3_asr=OfflineQwen3ASRModelConfig(conv_frontend="", encoder="", decoder="", tokenizer="", hotwords="", max_total_len=512, max_new_tokens=128, temperature=1e-06, top_p=0.8, seed=42), telespeech_ctc="", tokens="E:\VibeCoding\AgentXiang\.tools\model-sense-voice\sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09\tokens.txt", num_threads=12, debug=False, provider="cpu", model_type="", modeling_unit="cjkchar", bpe_vocab=""), lm_config=OfflineLMConfig(model="", scale=0.5, lodr_scale=0.01, lodr_fst="", lodr_backoff_id=-1), ctc_fst_decoder_config=OfflineCtcFstDecoderConfig(graph="", max_active=3000), decoding_method="greedy_search", max_active_paths=4, hotwords_file="", hotwords_score=1.5, blank_penalty=0, rule_fsts="", rule_fars="", hr=HomophoneReplacerConfig(lexicon="", rule_fsts=""))
+Creating recognizer ...
+Recognizer created!
+Started
+Reading: E:\VibeCoding\AgentXiang\style-samples\wav\p06.wav
+Started!
+17.790 -- 20.428: 讲接受举证惩法的一个应用
+21.182 -- 24.172: 我们来分析微信群中的连接矩阵
+26.814 -- 30.156: 在一个由四个同学组成的微信群中
+31.390 -- 35.340: 设他们的编号依次为一二三四
+36.318 -- 40.364: 我们用一个四阶方阵 A 表示他们之间的关系
+41.470 -- 47.692: 其中第二行底接列处的元素 A I 阶的取值为零或一
+48.638 -- 55.084: 如果第 I 号同学与 D J 号同学不是微信好友那么 A I J 等于零
+56.062 -- 59.820: 如果他们是微信好友那么 A I J 等于一
+60.798 -- 64.012: 这个矩阵 A 通常称为临接矩阵
+65.310 -- 67.436: 现在已知 A 的平方
+68.862 -- 74.028: 我们要根据这个举证来判断下列叙述中哪一个是正确的
+74.686 -- 78.508: 一一号与四号一定是微信好友
+80.126 -- 82.828: 二号与三号一定是微信好友
+83.774 -- 87.980: 三二号与四号有且仅有一个共同的好友
+89.694 -- 93.324: 一号与三号有且仅有两个共同的好友
+94.270 -- 96.972: 你可以按暂停键思考一下
+99.038 -- 102.028: 下面我们来分析一下 A 与 A 的平方
+103.966 -- 107.116: 注意 A 的主对角线上的元素全为零
+108.062 -- 110.828: 因为每一个人与他自己不是好友
+111.294 -- 114.924: 比如说一号同学与他自己不是微信好友
+115.614 -- 117.644: 所以 A 一一等于零
+118.590 -- 123.788: 类似的 A 二二 A 三三 A 四四也都等于零
+124.702 -- 126.316: 我们再来看 A 的平方
+127.198 -- 133.996: 为了叙述方面我们把 A 的平方中的第二行给接叠出的元素即为 B I J
+134.942 -- 142.444: 比如说 B 一一等于 A 中的第一行与第一列的四个元素对应相乘再相加
+143.486 -- 147.980: 其中 A 一二乘以 A 二一的值等于零或一
+148.894 -- 151.916: 如果一号与二号不是微信好友
+152.478 -- 155.500: 那么 A 一二与 A 二一都等于零
+155.998 -- 157.388: 乘积也就等于零
+158.654 -- 161.388: 如果一号与二号是微信好友
+162.334 -- 165.260: 那么 A 一二与 A 二一都等于一
+165.982 -- 167.564: 乘积也就等于一
+169.118 -- 169.804: 类似的
+170.302 -- 173.100: 如果一号与三号不是微信好友
+173.598 -- 177.196: 那么 A 一三乘以 A 三一等于零
+178.142 -- 183.084: 如果一号与三号是微信好友那么这一项等于一
+185.086 -- 187.724: 最后这一项的道理是类似的
+190.494 -- 191.372: 由此可见
+192.094 -- 194.796: 在二三四这三个同学中
+195.582 -- 200.620: 有几个是一号的微信好友这里就有几项的值等于一
+202.686 -- 206.796: 如果都不是一号的好友那么这几项的值全为零
+208.670 -- 210.220: 如果都是一号的好友
+211.198 -- 213.260: 那么这三项的值全为一
+215.198 -- 215.852: 总之
+216.414 -- 222.124: B 一一的值等于一号同学在这个微信群中微信好友的个数
+224.638 -- 227.116: 对 D 二二做类似的分析
+227.902 -- 233.932: 可以知道 B 二二等于二号同学在这个微信群中微信好友的个数
+235.774 -- 238.988: B 三三 B 四四的含义是类似的
+239.966 -- 241.292: 我不再重复说了
+243.390 -- 244.940: 接下来分析 B 一二
+246.398 -- 251.948: 它等于 A 中第一行与第二列的四个数对应相乘再相加
+254.078 -- 256.140: 这两项不用说了都等于零
+257.470 -- 259.948: A 一三乘以 A 三二
+260.446 -- 261.580: 有四种情形
+262.558 -- 265.356: 前三种情形所得的值为零
+266.238 -- 269.196: 第四种情形下所得的值等于一
+270.846 -- 273.324: 请注意看第四种情形意味着
+273.790 -- 279.212: 一号与三号是好友同时三号与二号也是好友
+280.094 -- 284.556: 换句话说三号是一号与二号的共同好友
+286.654 -- 287.820: 在这种情况下
+288.478 -- 290.252: 这一项的值等于一
+291.326 -- 292.588: 前三种情形下
+293.118 -- 296.012: 三号不是一号与二号的共同好友
+296.734 -- 299.244: 这一项的值算出来就等于零
+301.278 -- 304.300: 对于最后一项 A 一四 A 四二
+305.374 -- 306.540: 道理是类似的
+307.678 -- 311.788: 如果四号同学不是一号�num threads: 12
+decoding method: greedy_search
+Elapsed seconds: 14.741 s
+Real time factor (RTF): 14.741 / 454.624 = 0.032
+�二号的共同好友
+312.510 -- 314.764: 那么这一项的值算出来等于零
+315.870 -- 321.324: 如果四号是一号与二号的共同好友那么这一项算出来等于一
+322.686 -- 323.596: 总而言之
+324.414 -- 329.740: 一号与二号有几个共同好友这里就有几项算出来等于一
+331.134 -- 336.972: 可见 B 一二的值等于一号与二号在这个群中共同好友的个数
+339.070 -- 340.876: 我相信你已经能够理解
+341.598 -- 346.412: B 一三 B 一四等等其余几个元素所蕴含的意义了
+348.350 -- 350.156: 比如说 B 一三
+350.910 -- 354.444: 他表示一号与三号共同好友的个数
+356.990 -- 358.028: 我们回到这里
+358.718 -- 360.876: 注意这里的 B 二二等于三
+361.470 -- 365.612: 可见二号同学在这个群里有三位微信好友
+366.462 -- 369.932: 这意味着他与其余三个同学都是好友
+370.910 -- 374.508: 特别的二号与三号一定是微信好友
+376.382 -- 377.676: 可见第二个选项
+378.206 -- 378.924: 是正确的
+380.830 -- 382.284: 那其余三个选项呢
+384.062 -- 387.372: 我们来看一号与四号是不是微信好友
+389.406 -- 391.564: 注意这里的 B 四四等于一
+392.254 -- 396.332: 这意味着四号在这个群里有且仅有一位好友
+397.470 -- 398.604: 刚才已经说了
+399.070 -- 402.188: 二号与一三四号都是好友
+403.102 -- 407.564: 可见二号是四号在这个微信群中唯一的好友
+408.574 -- 411.980: 因此一号不可能是四号的微信好友
+412.894 -- 415.404: 所以我们可以排除第一个选项
+417.502 -- 419.564: 注意这里的 B 二四等于零
+420.382 -- 425.292: 这意味着二号与四号在这个群里没有共同的微信好友
+426.366 -- 428.364: 所以可以排除第三个选项
+430.686 -- 433.164: 最后根据 B 一三等于一
+433.950 -- 435.660: 可以排除第四个选项
+438.526 -- 440.556: 这个例子我们就说到这里
+441.566 -- 445.580: 你也可以自己进一步探索一下其中更多的奥秘

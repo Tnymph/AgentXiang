@@ -1,0 +1,32 @@
+# 不随代码走的东西。分三类：机密、大文件、本机残留。
+
+# ---------- 机密与运行数据：绝不入库 ----------
+# 数据库、密钥（加密的）、配置、日志全在 data/ 里
+data/
+inbox/
+paths.json
+
+# ---------- 引擎与模型：几十 GB，装法见 docs/文件与路径总账.md ----------
+.tools/
+assets/models/
+
+# 音频素材（几百 MB）：转录文本留着，音频自己放回 style-samples/audio/
+style-samples/audio/
+style-samples/wav/
+
+# 手机打包产物
+dist/
+
+# ---------- 本机残留 ----------
+.mimosa/
+.scratch/
+.zcodeignore
+log.txt
+quoteMsg*
+
+# ---------- 通用 ----------
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db
+*.log

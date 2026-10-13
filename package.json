@@ -1,0 +1,15 @@
+{
+  "name": "agentxiang",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "QQ 聊天机器人：本地 Web 界面 + OneBot(NapCat) + DeepSeek",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --no-warnings src/index.js",
+    "start:debug": "node --no-warnings src/index.js --debug"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
